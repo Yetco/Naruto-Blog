@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+image {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  /* How do I add a background linear gradient */
+  background: linear-gradient(red, yellow);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  */
+
+.section-one {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.subscribe {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  color: orange;
+  margin-top: 0.5em;
+}
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 1em;
+  background-color: none;
+}
+
+.card {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  padding: 1rem;
+  margin: 2em auto;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+.card1.flipped {
+  transform: rotateY(180deg);
+  /* background-color: white; */
+  background-image: url(naruto-line.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.card2.flipped {
+  transform: rotateY(180deg);
+  /* background-color: white; */
+  background-image: url(eyes-of-sasuke-uchiha.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card3.flipped {
+  transform: rotateY(180deg);
+  /* background-color: white; */
+  background-image: url(sakura_haruno.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card4.flipped {
+  transform: rotateY(180deg);
+  /* background-color: white; */
+  background-image: url(Kakashi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.card5.flipped {
+  transform: rotateY(180deg);
+  /* background-color: white; */
+  background-image: url(yamato.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.card6.flipped {
+  transform: rotateY(180deg);
+  /* background-color: white; */
+  background-image: url(lady-tsunade.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.card .card-content {
+  backface-visibility: hidden;
+  /* position: absolute; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.card .card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.card-intro {
+  color: black;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.card-date {
+  color: black;
+}
+
+.card-about {
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.continue-reading {
+  margin-top: 3em;
+}
+
+.card1 {
+  background-color: orange;
+}
+
+.card2 {
+  background-color: rgb(222, 77, 222);
+}
+
+.card3 {
+  background-color: pink;
+}
+
+.card4 {
+  background-color: rgb(179, 179, 179);
+}
+
+.card5 {
+  background-color: rgb(85, 130, 85);
+}
+.card6 {
+  background-color: rgb(231, 221, 164);
+}
+
+a {
+  margin-top: 3em;
+}
+
+@media (min-width: 1000px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-one {
+    margin: 2em 0;
+  }
+
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-two {
+    margin-left: 17em;
+  }
+
+  .section-three {
+    margin-right: 17em;
+  }
+}
